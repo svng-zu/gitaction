@@ -21,6 +21,12 @@ jobs:
         run: go build -v ./...
         #with 과 run 이 언어마다 달라짐
 
+      - name: Login To DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: itbam
+          password: dckr_pat_ZKp0ClOZep8-qExXy-4eEExXG8w
+          
       - name: build and releae to DockerHub
         env:
           NAME: itbam
