@@ -25,7 +25,7 @@ jobs:
         uses: docker/login-action@v1
         with:
           username: itbam
-          password: dckr_pat_ZKp0ClOZep8-qExXy-4eEExXG8w
+          password: dckr_pat_yEViXHqtLZlBj4-pEWu6NwU_Dp8
           
       - name: build and releae to DockerHub
         env:
